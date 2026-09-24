@@ -3,22 +3,22 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Acesso Turbo</title>
+<title>AXIS • TURBO</title>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth;overflow-x:hidden;background:#050505}
-body{background:#050505;font-family:'Inter',sans-serif;overflow-x:hidden;overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior-y:contain;touch-action:pan-y}
-body::-webkit-scrollbar{display:none}
-.page{width:100%;max-width:430px;background:#0A0A0A;display:flex;flex-direction:column;align-items:center;margin:0 auto;min-height:100dvh}
+body{background:#050505;font-family:'Inter',sans-serif;display:flex;justify-content:center}
+.page{width:100%;max-width:430px;background:#0A0A0A;display:flex;flex-direction:column;align-items:center}
 .top-bar{background:rgba(0,0,0,0.6);border:1px solid #A855F7;color:#fff;text-align:center;padding:8px 18px;font-weight:700;font-size:11px;width:fit-content;max-width:90%;line-height:1.3;letter-spacing:0.6px;text-transform:uppercase;border-radius:999px;margin:18px auto 0;box-shadow:0 0 12px rgba(168,85,247,0.12)}
 .content{padding:0 16px 40px;text-align:center;width:100%;display:flex;flex-direction:column;align-items:center}
 h1{font-size:26px;font-weight:900;line-height:1.05;letter-spacing:-0.4px;margin:26px 0 16px;text-transform:uppercase;text-align:center}
 .sub-w{font-size:15px;font-weight:500;color:#D1D1D6;line-height:1.4;margin-bottom:26px;max-width:320px;letter-spacing:-0.2px}
 .video{width:100%;aspect-ratio:16/9;background:#000;border-radius:18px;margin-bottom:36px;overflow:hidden;border:0.5px solid rgba(255,255,255,0.08)}
 .rec{font-size:18px;font-weight:900;color:#fff;letter-spacing:-0.3px;margin-bottom:12px;text-transform:uppercase}
-.btn{display:inline-flex;align-items:center;justify-content:center;width:fit-content;max-width:92%;background:#A855F7;color:#fff;border:none;border-radius:999px;padding:14px 26px;font-weight:900;font-size:14px;letter-spacing:0.3px;margin:24px auto 12px;box-shadow:0 8px 24px rgba(168,85,247,0.35);text-decoration:none;text-transform:uppercase;white-space:nowrap;line-height:1;cursor:pointer}
+.btn{display:inline-flex;align-items:center;justify-content:center;width:fit-content;max-width:92%;background:#A855F7;color:#fff;border:none;border-radius:999px;padding:14px 26px;font-weight:900;font-size:14px;letter-spacing:0.3px;margin:24px auto 12px;box-shadow:0 8px 24px rgba(168,85,247,0.35);text-decoration:none;text-transform:uppercase;white-space:nowrap;line-height:1;cursor:pointer;transition:all 0.25s ease}
+.btn:hover{transform:translateY(-1px);box-shadow:0 12px 28px rgba(168,85,247,0.5)}
 .btn:active{transform:scale(0.97)}
+.btn:disabled{opacity:0.85;pointer-events:none}
 .urgency{font-size:12px;color:#E2E2E6;font-style:italic;font-weight:500;margin-bottom:6px;line-height:1.4;max-width:320px}
 .under{font-size:11px;color:#A1A1A6;margin-bottom:22px}
 .garant{font-size:14px;font-weight:700;color:#fff;margin-bottom:10px}
@@ -34,18 +34,27 @@ h1{font-size:26px;font-weight:900;line-height:1.05;letter-spacing:-0.4px;margin:
 <div class="page">
   <div class="top-bar">SÓ HOJE: ACESSO TURBO R$97 POR R$39,90</div>
   <div class="content">
-    <h1><span style="color:#FFFFFF;">SEU FUNIL ESTÁ</span><br><span style="color:#A855F7;">VAZANDO</span><br><span style="color:#FFFFFF;">DINHEIRO?</span></h1>
+    <h1>
+      <span style="color:#FFFFFF;">SEU FUNIL ESTÁ</span><br>
+      <span style="color:#A855F7;">VAZANDO</span><br>
+      <span style="color:#FFFFFF;">DINHEIRO?</span>
+    </h1>
     <div class="sub-w">Talvez o problema nunca tenha sido seu tráfego. Mas como sua oferta está sendo percebida.</div>
     <div class="video"></div>
     <div class="rec">O QUE O AXIS FAZ?</div>
-    <div style="font-size:14px;color:#C2C2C8;line-height:1.6;font-weight:400;margin-bottom:8px;max-width:320px;">Varre seu funil inteiro e aponta onde você está perdendo dinheiro,<br><span style="color:#fff;font-weight:700;">antes de escalar.</span></div>
+    <div style="font-size:14px; color:#C2C2C8; line-height:1.6; font-weight:400; margin-bottom:8px; max-width:320px;">
+      Varre seu funil inteiro e aponta onde você está perdendo dinheiro,<br>
+      <span style="color:#fff; font-weight:700;">antes de escalar.</span>
+    </div>
     <a href="SEU_LINK_CAKTO_AQUI" id="btn-checkout" class="btn">EU QUERO O AXIS</a>
     <div class="urgency">Oportunidade única: Leve agora por R$39,90. Depois volta para R$97</div>
     <div class="under">Acesso Imediato • 100% garantido</div>
     <div class="garant">Garantia incondicional de <span>7 dias.</span></div>
     <div class="dev">Se não fazer escalar seu funil em 1 semana,<br>devolvemos <span>100%</span> do seu investimento.</div>
     <div class="div"></div>
-    <div class="foot"><div class="foot-simple">2027 © Axis turbo. Todos os direitos autorais reservados.</div></div>
+    <div class="foot">
+      <div class="foot-simple">2027 © Axis turbo. Todos os direitos autorais reservados.</div>
+    </div>
   </div>
 </div>
 <script>
